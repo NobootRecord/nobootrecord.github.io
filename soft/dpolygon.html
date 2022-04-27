@@ -1,0 +1,90 @@
+<!DOCTYPE HTML><head><meta charset="UTF-8"><title>Dancing Polygon | NobootRecord's Website</title>
+<link rel="icon" href="../favicon.ico"><style>
+body
+{
+	background-color: white;
+	font-family: "Fira Sans";
+	font-size: 16px;
+	margin-left: 24px;
+	margin-right: 24px;
+}
+
+@font-face {
+  font-family: "Conthrax Semibold";
+  src: url("media/ConthraxSb-Regular 600.ttf");
+}
+
+h1
+{
+  font-family: "Conthrax Semibold";
+  margin-left: 16px;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+.leftsidebar
+{
+	border: 2px solid #C0C0C0; border-radius: 5px; width: 320px; float: left;
+}
+
+.main
+{
+	margin-left: 360px;
+}
+</style><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet"></head>
+<body link="#FF0000" vlink="#FF0000" alink="#FF0000">
+
+<!-- Title bar -->
+<center><br>
+<h1>NobootRecord's <span style="color: red; display: inline-block; transform: rotate(-10deg);">Website</span></h1>
+<p>:: <a href="../index.html" style="color: black;">Домашняя страница</a> ::&ensp;<a href="../blog.html" style="color: black;">Блог</a> ::&ensp;<a href="../soft.html" style="color: black;">Программы</a> ::&ensp;<a href="../photos.html" style="color: black;">Фото</a> ::&ensp;<a href="../info.html" style="color: black;">О сайте</a> ::&ensp;</p>
+</center><br>
+
+<!-- Left sidebar -->
+<div class="leftsidebar">
+<div style="margin-left: 16px; margin-right: 16px;">
+<h4 style="color: red;">&ensp;Местное время:</h4>
+<div id="clockp" style="font-size: 14px;">&ensp;1 января 1970 года</div>
+<h4 style="color: red;">&ensp;Новости сайта:</h4>
+<p>&ensp;&bull;&ensp;Добавлен раздел "Фото", где можно посмотреть мои фотографии :)</p>
+<p>&ensp;&bull;&ensp;Перестройка сайта идёт полным ходом. Впрочем, ничего нового...</p>
+<a href="../news.html">&ensp;Посмотреть все новости...</a>
+<br><br></div></div>
+
+<!-- Main content -->
+<div class="main">
+<h1>Dancing Polygon</h1>
+&ensp;&ensp;Весьма странная и никому не понятная хрень, которая рисует прикольные фигурки с использованием GDI-функций.<br><br>
+<center><img src="../media/dpolygon.png" title="Dancing Polygon в действии" width="50%"></center><br>
+Программа была написана мной за несколько дней на Delphi 7. Никакой практической/теоретической ценности не представляет, кроме генерации прикольных фигурок (polygon) с их дальнейшей раскраской и танцами, используя GDI-функции. Есть функция экспорта в BMP-файл, но нет русской локализации :DDDD<br>
+<br>
+<p>&bull;&ensp;<a href="DPolygon10.zip">Версия 1.0</a> от 25 апреля 2022 года (сборка 25 ноября 2021 года)</p>
+<br><br>
+</div>
+
+<!-- Copyright label -->
+<hr width="50%">
+<center><p>&ensp;Copyright (c) Ivan Movchan, 2021-2022. Hosting by <a href="https://github.com">GitHub</a></p></center>
+</div><br><br>
+
+<!-- Some JavaScript code -->
+<script language="JavaScript">
+var monthes = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"];
+var weekdays = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
+	
+function setClock(){
+	var x = new Date();
+	var y = "&ensp;" + weekdays[x.getDay()] + ", " + x.getDate() + " " + monthes[x.getMonth()] + " " + x.getFullYear() + " года, <br>&ensp;" + x.getHours() + ":";
+	if (x.getMinutes() < 10){y = y + "0" + x.getMinutes() + ":";} else {y = y + x.getMinutes() + ":";};
+	if (x.getSeconds() < 10){y = y + "0" + x.getSeconds();} else {y = y + x.getSeconds();};
+	document.getElementById("clockp").innerHTML = y;
+};
+
+setClock();setInterval(setClock, 1000);
+</script>
+</body></html>

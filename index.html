@@ -1,90 +1,98 @@
-<!-- ..:: NobootRecord's Website ::.. -->
+<!DOCTYPE HTML><head><meta charset="UTF-8"><title>Домашняя страница | NobootRecord's Website</title>
+<link rel="icon" href="favicon.ico"><style>
+body
+{
+	background-color: white;
+	color: black;
+	font-family: "Fira Sans";
+	font-size: 16px;
+	margin-left: 24px;
+	margin-right: 24px;
+}
 
-<!DOCTYPE html>
+@font-face {
+  font-family: "Conthrax Semibold";
+  src: url("media/ConthraxSb-Regular 600.ttf");
+}
 
-<head>
+h1
+{
+  font-family: "Conthrax Semibold";
+  margin-left: 16px;
+}
 
-<!-- Some basic settings of page -->
-<meta charset="UTF-8">
-<title>NobootRecord's Website</title>
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+a
+{
+	text-decoration: none;
+}
 
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
+.leftsidebar
+{
+	border: 2px solid #C0C0C0; border-radius: 5px; width: 320px; float: left;
+}
+
+.main
+{
+	margin-left: 360px;
+}
+
+</style><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet"></head>
+<body link="#FF0000" vlink="#FF0000" alink="#FF0000">
 
-</head>
+<!-- Title bar -->
+<center><br>
+<h1>NobootRecord's <span style="color: red; display: inline-block; transform: rotate(-10deg);">Website</span></h1>
+<p>:: <a href="index.html">Домашняя страница</a> ::&ensp;<a href="blog.html" style="color: black;">Блог</a> ::&ensp;<a href="soft.html" style="color: black;">Программы</a> ::&ensp;<a href="photos.html" style="color: black;">Фото</a> ::&ensp;<a href="info.html" style="color: black;">О сайте</a> ::&ensp;</p>
+</center><br>
 
-<!-- Here the content starts -->
-<body bgcolor="white" color="black" style="font-family: Ubuntu;">
+<!-- Left sidebar -->
+<div class="leftsidebar">
+<div style="margin-left: 16px; margin-right: 16px;">
+<h4 style="color: red;">&ensp;Местное время:</h4>
+<div id="clockp" style="font-size: 14px;">&ensp;1 января 1970 года</div>
+<h4 style="color: red;">&ensp;Новости сайта:</h4>
+<p>&ensp;&bull;&ensp;Добавлен раздел "Фото", где можно посмотреть мои фотографии :)</p>
+<p>&ensp;&bull;&ensp;Перестройка сайта идёт полным ходом. Впрочем, ничего нового...</p>
+<a href="news.html">&ensp;Посмотреть все новости...</a>
+<br><br></div></div>
 
-<!-- Website title -->
-<a href="index.html" style="text-decoration: none; color: black;">
-<div style="background-image:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1)),
-    url('photos/20220319_154344.jpg'); background-size: cover; background-position: center; margin-top: -8px;">
-<br><br><br><br>
-
-<center><div style="font-size: 48px; margin-left: -140px;">
-<b>NobootRecord's
-<div style="color: red; transform: rotate(-5deg);">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Website</b>
-</div></div><br><br><br><br></div></a>
-
-<!-- Main content goes here -->
-<center>
+<!-- Main content -->
+<div class="main">
+<h1>Добро пожаловать!</h1>
+&ensp;&ensp;Рад приветствовать Вас на страницах моего вебсайта. Здесь вы сможете скачать мои программы, прочитать мои статьи, посмотреть мои фото и так далее.<br>
+&ensp;&ensp;Рекомендую потыкать ссылочки сверху, там гораздо больше годного и интересного контента :)
 <br><br>
-
+<h1>Последняя статья из блога</h1>
+&ensp;&ensp;&bull;&ensp;<a href="blog/win11_perehod.html">Мой переход на Windows 11: стоило ли оно того?</a> <em>27.04.2022</em><br>
+&ensp;&ensp;Читатели моего вебсайта наверняка знают, что недавно (в прошлом 2021 году) вышла принципиально новая операционная система Windows 11. Я долго сомневался, стоит ли мне обновляться до сей замечательной системы, и всё-таки обновился<br>в декабре 2021 года.
+В этой статье я расскажу о своих приключениях с этой вашей Windows 11, её плюсах и минусах,<br>
+а также расскажу, стоит ли Вам переходить на новую Windows? Начнём...
 <br><br>
-<h1>Добро пожаловать на мой вебсайт!</h1><br><br>
-Меня зовут Иван Мовчан, в интернетах я известен как NobootRecord. Мне 15 лет, живу в Санкт-Петербурге. Увлекаюсь компьютерами, музыкой, фотографией.<br>Люблю программировать всякую низко/высокоуровневую хренотень на C++, Delphi, Python, JavaScript и других языках программирования.<br>
-Играю на фортепиано, пишу трекерную музыку. Делаю фотоснимки, иногда выходит красиво и необычно.
+<h1>Новая версия программы</h1>
+&ensp;&ensp;26 апреля 2022 года состоялся долгожданный (хочется верить) выпуск версии 1.4 утилиты <a href="soft/strhack.html">String Hacker</a>. Был обновлён графический интерфейс, добавлены новые функции и операции, а также были исправлены старые баги и добавлены новые :)
 <br><br><br><br>
 </div>
 
-<br><br><br><br>
+<!-- Copyright label -->
+<hr width="50%">
+<center><p>&ensp;Copyright (c) Ivan Movchan, 2021-2022. Hosting by <a href="https://github.com">GitHub</a></p></center>
+</div><br><br>
 
-<a href="strhack.html" style="text-decoration: none; color: black;">
-<div style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1)), url('photos/20211010_161208.jpg'); background-position: center; background-size: auto 400%; margin: 0px -8px 0px -8px;">
-<br>
-<div style="text-align: right; margin-right: 100px;">
-<img src="strhack.png" align="left" style="margin-left: 100px; box-shadow: 0 0 10px rgba(0,0,0,0.5); margin-top: -8px;">
-<br><br>
-<h1>String Hacker</h1><br>
-Простая и лёгкая утилита для искажения и модификации строковых данных.<br>Простой и понятный интерфейс. Поддержка работы с текстовыми файлами.<br>Есть английский и русский языки интерфейса.<br>
-<br><br><br><br><br><br><br>
-</div></div></a>
-
-<br>
-
-<a href="sifd.html" style="text-decoration: none; color: black;">
-<div style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1)), url('photos/20220305_143643.jpg'); background-position: center; background-size: auto 400%; margin: 0px -8px 0px -8px;">
-<br>
-<div style="text-align: right; margin-right: 100px;">
-<img src="sifd.png" align="left" style="margin-left: 100px; margin-top: 0px; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
-<br><br>
-<h1>Simple Internet File Downloader</h1><br>
-Самый <s>клёвый модный современный</s> <b>убогий </b>загрузчик файлов из интернетов в мире!
-<br><br><br><br><br><br><br>
-</div></div></a>
-
-<!-- Content end -->
-<br><br><br><br><hr color="black" width="50%"><br><br>
-<div id="systime"></div>
-<p>Copyright &copy; Ivan Movchan, 2021 - 2022. The website is hosted by <a href="https://github.com" style="text-decoration: none; color: black;">GitHub</a>. All rights reserved.</p>
-<br><br>
-</center>
-
-<!-- JavaScript code goes here -->
+<!-- Some JavaScript code -->
 <script language="JavaScript">
-
-// Get system date & time
-function getSysTime(){ 
-	document.getElementById("systime").innerHTML = Date();
+var monthes = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"];
+var weekdays = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
+	
+function setClock(){
+	var x = new Date();
+	var y = "&ensp;" + weekdays[x.getDay()] + ", " + x.getDate() + " " + monthes[x.getMonth()] + " " + x.getFullYear() + " года, <br>&ensp;" + x.getHours() + ":";
+	if (x.getMinutes() < 10){y = y + "0" + x.getMinutes() + ":";} else {y = y + x.getMinutes() + ":";};
+	if (x.getSeconds() < 10){y = y + "0" + x.getSeconds();} else {y = y + x.getSeconds();};
+	document.getElementById("clockp").innerHTML = y;
 };
 
-getSysTime();
-var s = window.setInterval(getSysTime, 1000);
-</script></body></html>
-
-<!-- Copyright (c) 2022 -->
+setClock();setInterval(setClock, 1000);
+</script>
+</body></html>
