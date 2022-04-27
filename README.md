@@ -1,4 +1,4 @@
-# nobootrecord.github.io
-NobootRecord's Website
+# NobootRecord's Website [https://nobootrecord.github.io]
 
-Мой простой и минималистичный вебсайт на HTML и JavaScript.
+My website coded with HTML and JavaScript.\
+Мой вебсайт, написанный с нуля на HTML и JavaScript.
