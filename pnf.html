@@ -1,0 +1,15 @@
+<!DOCTYPE html><head><meta charset="UTF-8"><title>Prime Numbers Finder | Ivan Movchan's Website</title>
+<link rel="stylesheet" type="text/css" href="style.css"></head><body>
+<!-- Title -->
+<center><a href="index.html"><h2 style="display: inline;">...::: Ivan Movchan's Website :::...</h2></a><br>
+<p id="clockp">Sample Text</p></center><br><hr>
+<!-- Main content -->
+<h3>Prime Numbers Finder</h3>
+<p>Небольшая математическая программа, которая вычисляет и выводит простые числа в определённом диапазоне. Написана чисто по приколу на чистом Си (откомпилирована на TCC) и весит менее 4 килобайт.<br>Кто изучал в школе математику, тот наверняка знает о том, что <s>2 + 2 = 5</s> простое число - это число, которое делится только на единицу и на само себя. Примеры простых чисел: 2, 3, 5, 7, 11, 13, 17, 19 и так далее по списку.<br><br><center><img src="media/pnf.png" title="Prime Numbers Finder в действии" width="50%"></center><br><br>Идея программы была подкинута моим отцом, который хотел как раз таки написать такую программу, но у него получалось. Он говорил, что это должна быть, наверное, очень сложная программа. На самом же деле всё оказалось гораздо проще (у меня).<br><br>
+Как же это работает? Всё довольно просто. Программа перебирает в цикле for все делители для числа N. Если число N делится на число M без остатка И верно равенство (1 &lt; M &lt; N), то цикл моментально обрывается, и число N засчитывается НЕпростым числом. Если же всё в порядке и программа доходит до конца цикла for без ошибок, то наше число N, так уж и быть, выводится в консоль (с переходом на новую строку).<br><br>Запуск программы в командной строке: pnf.exe %min% %max%, где %min%, %max% - диапазон для поиска простых чисел.<br><br>
+<p>&bull;&ensp;<a href="media/PNF10.zip">Версия 1.0</a> от 21 мая 2022 года</p>
+</p>
+<!-- Copyright label -->
+<center><br><hr><br><img src="media/xp.png" style="float: left;" width="8%"><br><br><br>Copyright &copy; Ivan Movchan, 2021 - 2022. Рекомендуется включить JavaScript в вашем браузере для лучшего eXpErIeNcE.<br>Электронная почта автора: <em>gogol2k7 at gmail dot com</em>. Powered by <a href="https://github.com">GitHub</a><br><br><br><br><br></center>
+<script language="JavaScript" src="code.js"></script>
+</body></html>
