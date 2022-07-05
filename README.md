@@ -1,3 +1,3 @@
-# Ivan Movchan's Website [https://nobootrecord.github.io]
+# NobootRecord's Website
 
-My website coded in HTML+CSS+JavaScript
+Мой вебсайт, который я не обновляю уже 200 лет из-за отсутствия желания и контента...
